@@ -5,3 +5,23 @@ html {
     box-sizing: inherit;
   }
 
+  .navbar {
+    margin-left: 180px; /* Agrega un margen izquierdo de 200px */
+}
+
+/* Estilo personalizado para la barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 180px; /* Ancho deseado de la barra lateral */
+  z-index: 1;
+  padding-top: 20px;
+  background-color: #c1bebe; /* Color de fondo de la barra */
+}
+
+/* Estilo para las opciones de la barra lateral */
+.nav-item {
+  width: 100%;
+}
