@@ -9,9 +9,12 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">PhotoWeave</a>
+          <a class="navbar-brand" href="#">
+            <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            PhotoWeave
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,108 +23,270 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Más Información
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Fuentes</a></li>
+                  <li><a class="dropdown-item" href="#">Créditos</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              </li>              
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
 
-      <div class="container-fluid">
-        <div class="row">
-            <!-- Barra lateral -->
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                    <div class="dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Países
-                      </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">España</a></li>
-                            <li><a class="dropdown-item" href="#">Francia</a></li>
-                            <li><a class="dropdown-item" href="#">Italia</a></li>
-                         
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                  <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Artistas
-                    </a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Vincent Van Gogh</a></li>
-                          <li><a class="dropdown-item" href="#">Leonardo Da Vinci</a></li>
-                          <li><a class="dropdown-item" href="#">Pablo Picasso</a></li>
-          
-                      </ul>
-                  </div>
-              </li>
-              <li class="nav-item">
+      
+<aside>
+  <div class="container-fluid">
+    <div class="row">
+        <!-- Barra lateral -->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar ">
+          <ul class="nav flex-column">
+            <li class="nav-item">
                 <div class="dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Etapas
+                    Países
                   </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Renacimiento</a></li>
-                        <li><a class="dropdown-item" href="#">Barroco</a></li>
-                        <li><a class="dropdown-item" href="#">Realismo</a></li>
-                    
+                        <li><a class="dropdown-item" href="#">España</a></li>
+                        <li><a class="dropdown-item" href="#">Francia</a></li>
+                        <li><a class="dropdown-item" href="#">Italia</a></li>
+                     
                     </ul>
                 </div>
             </li>
             <li class="nav-item">
               <div class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Año
+                  Artistas
                 </a>
                   <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1700-1750</a></li>
-                      <li><a class="dropdown-item" href="#">1800-1850</a></li>
-                      <li><a class="dropdown-item" href="#">1900-1950</a></li>
-         
+                      <li><a class="dropdown-item" href="#">Vincent Van Gogh</a></li>
+                      <li><a class="dropdown-item" href="#">Leonardo Da Vinci</a></li>
+                      <li><a class="dropdown-item" href="#">Pablo Picasso</a></li>
+      
                   </ul>
               </div>
-              <li class="nav-item">
-                <div class="dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Emoción
-                  </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Amor</a></li>
-                        <li><a class="dropdown-item" href="#">Misterio</a></li>
-                        <li><a class="dropdown-item" href="#">Melancolía</a></li>
-                  
-                    </ul>
-                </div>
-            </li>
-
-            <!-- Contenido principal -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <!-- Tu contenido principal aquí -->
-            </main>
-        </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Etapas
+              </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Renacimiento</a></li>
+                    <li><a class="dropdown-item" href="#">Barroco</a></li>
+                    <li><a class="dropdown-item" href="#">Realismo</a></li>
+                
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Año
+            </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1700-1750</a></li>
+                  <li><a class="dropdown-item" href="#">1800-1850</a></li>
+                  <li><a class="dropdown-item" href="#">1900-1950</a></li>
+     
+              </ul>
+          </div>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Emoción
+              </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Amor</a></li>
+                    <li><a class="dropdown-item" href="#">Misterio</a></li>
+                    <li><a class="dropdown-item" href="#">Melancolía</a></li>
+              
+                </ul>
+            </div>
+        </li>
     </div>
+</div>
+</aside>
+    <!-- Contenido principal -->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <!-- Tu contenido principal aquí -->
+    <h1 id="fraseAleatoria">Aqui es donde va a ir algo de texto</>
+  </main>
+  
+  <article class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <h1>Aqui deberiamos empezar a realizar el grid donde se muestran las imágenes</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="footer">
+    <hr>
+    <footer>
+      <p>Todos los derechos reservados <b>Ivan Arechiga, Juan Ruiz </b> 2023. PhotoWeave Web art Gallery</p>
+    </footer>
+  </div>
+    
       
 
 <script src="main.js"></script>  
