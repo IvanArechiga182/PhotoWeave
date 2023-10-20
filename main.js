@@ -11,10 +11,10 @@ function fraseRandom(){
     return frases[indice];
 }
 
-/*var elementoFrase = document.getElementById("fraseAleatoria");
+var elementoFrase = document.getElementById("fraseAleatoria");
 elementoFrase.textContent = fraseRandom();
 
-function createPaintingsArray() {
+/*function createPaintingsArray() {
   // Crea un nuevo array de pinturas.
   const paintings = [];
 
@@ -81,3 +81,40 @@ function showPaintingsGrid(paintings) {
 }
 
 showPaintingsGrid(filteredPaintings);*/
+
+/* EL siguiente codigo es lo que se supone que funcionaba pero dejo de funcionar para la busqueda
+de las tarjetas que coincidian con el busqueda (es decir el titulo de la pintura) */
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('buscador');
+  const searchButton = document.getElementById('boton-buscar');
+  const cards = document.querySelectorAll('.card');
+
+  searchButton.addEventListener('click', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  cards.forEach(function(card) {
+    const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+    if (cardTitle.includes(searchTerm)) {
+      card.style.display = 'block';
+      card.classList.add('search-result-card'); // Agregar clase para alinear
+    } else {
+      card.style.display = 'none';
+      card.classList.remove('search-result-card'); // Eliminar clase si no coincide
+    }
+  });
+
+  // Restaurar estilos al borrar la búsqueda
+  if (searchTerm === '') {
+    cards.forEach(function(card) {
+      card.style.display = 'block';
+      card.classList.remove('search-result-card');
+    });
+  }
+});
+
+});
+
+
+
