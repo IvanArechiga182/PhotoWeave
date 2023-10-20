@@ -35,6 +35,14 @@ footer{
   margin: 10px;
 }
 
+.card-img-top:hover{
+  transition: all 0.5s ease;
+  border: black 5px solid;
+  filter: brightness(30%);
+  cursor: pointer;
+
+}
+
 .footer{
   display: flex;
   justify-content: center;
