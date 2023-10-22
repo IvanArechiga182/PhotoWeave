@@ -53,6 +53,7 @@ footer{
 text-align: center;
 font-size: 20px;
 margin: 4px;
+border: black 1px solid;
 }
 
 .card:hover{
