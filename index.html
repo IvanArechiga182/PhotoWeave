@@ -9,37 +9,26 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg bg-info bg-gradient">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            PhotoWeave
+             <a class="brand-home" href="">PhotoWeave</a>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Más Información
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Fuentes</a></li>
-                  <li><a class="dropdown-item" href="#">Créditos</a></li>
-                </ul>
-              </li>            
+                        
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Países
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btn-outline-primary">España</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Francia</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Italia</button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">España</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Francia</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Italia</a> </button></li>
                 </ul>
               </li>                    
               <li class="nav-item dropdown">
@@ -47,9 +36,9 @@
                  Artistas
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btn-outline-primary">Vincent Van Gogh</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Leonardo da Vinci</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Pablo Picasso</button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Vincent Van Gogh</a></button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Leonardo da Vinci</a></button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Pablo Picasso</a></button></li>
                 </ul>
               </li> 
               <li class="nav-item dropdown">
@@ -57,9 +46,9 @@
                  Épocas
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btn-outline-primary">Barroco</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Renacimiento</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Romanticismo</button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Barroco</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Renacimiento</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Romanticismo</a> </button></li>
                 </ul>
               </li> 
               <li class="nav-item dropdown">
@@ -67,9 +56,9 @@
                  Año
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btn-outline-primary">1700 - 1800</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">1800 - 1900</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">1900 - Actualidad</button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">1700 - 1800</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">1800 - 1900</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">1900 - Actualidad</a> </button></li>
                 </ul>
               </li> 
               <li class="nav-item dropdown">
@@ -77,15 +66,24 @@
                  Emoción
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btn-outline-primary">Amor</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Misterio</button></li>
-                  <li><button type="button" class="btn btn-outline-primary">Melancolía</button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Amor</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Misterio</a> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="">Melancolía</a> </button></li>
                 </ul>
               </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más Información
+                </a>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="fuentes.html">Fuentes</> </button></li>
+                  <li><button type="button" class="btn btn-outline-primary"><a class="category" href="creditos.html">Créditos</a> </button></li>
+                </ul>
+              </li>  
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" id="buscador" aria-label="Search">
-              <button class="btn btn-outline-success" id="boton-buscar" type="submit">Buscar</button>
+              <input class="form-control me-2 border-2 border-black" type="search" placeholder="Buscar" id="buscador" aria-label="Search">
+              <button class="btn btn-outline-success text-black border-black border-2" id="boton-buscar" type="submit">Buscar</button>
             </form>
           </div>
         </div>
