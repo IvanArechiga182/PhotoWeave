@@ -14,7 +14,7 @@ function fraseRandom(){
 var elementoFrase = document.getElementById("fraseAleatoria");
 elementoFrase.textContent = fraseRandom();
 
-/*function createPaintingsArray() {
+function createPaintingsArray() {
   // Crea un nuevo array de pinturas.
   const paintings = [];
 
@@ -56,65 +56,96 @@ function filterPaintingsByCountry(paintings, country) {
   return filteredPaintings;
 }
 
+//Se modificó esta función
+
 function showPaintingsGrid(paintings) {
   // Crea un elemento `div` para la cuadrícula.
   const grid = document.createElement('div');
   grid.classList.add('row');
 
-  // Itera sobre el array de pinturas filtradas.
+  // Obtén el término de búsqueda del input de búsqueda.
+  const searchTerm = document.getElementById('buscador').value.toLowerCase();
+
+  // Itera sobre el array de pinturas.
   for (const painting of paintings) {
-    // Crea un elemento `div` para cada pintura.
-    const paintingCard = document.createElement('div');
-    paintingCard.classList.add('col');
+    // Comprueba si el título de la pintura contiene el término de búsqueda.
+    if (painting.title.toLowerCase().includes(searchTerm)) {
+      // Crea un elemento `div` para cada pintura.
+      const paintingCard = document.createElement('div');
+      paintingCard.classList.add('col');
 
-    // Agrega la imagen de la pintura al elemento `div`.
-    const paintingImage = document.createElement('img');
-    paintingImage.src = painting.image;
-    paintingCard.appendChild(paintingImage);
+      // Agrega la imagen de la pintura al elemento `div`.
+      const paintingImage = document.createElement('img');
+      paintingImage.src = painting.image;
+      paintingCard.appendChild(paintingImage);
 
-    // Agrega el elemento `div` de la pintura a la cuadrícula.
-    grid.appendChild(paintingCard);
+      // Agrega el elemento `div` de la pintura a la cuadrícula.
+      grid.appendChild(paintingCard);
+    }
   }
 
+  // Obtiene el elemento principal donde se mostrará la cuadrícula.
+  const mainElement = document.querySelector('main');
+  
+  // Limpia el contenido principal antes de agregar la cuadrícula actualizada.
+  mainElement.innerHTML = '';
+
   // Agrega la cuadrícula al DOM.
-  document.querySelector('main').appendChild(grid);
+  mainElement.appendChild(grid);
 }
 
-showPaintingsGrid(filteredPaintings);*/
+
+// Se eliminó la llamada a `showPaintingsGrid(filteredPaintings)` ya que se llamará en función de la búsqueda.
+
 
 /* EL siguiente codigo es lo que se supone que funcionaba pero dejo de funcionar para la busqueda
 de las tarjetas que coincidian con el busqueda (es decir el titulo de la pintura) */
 
+//También se modificó este último fragmento 
 
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('buscador');
   const searchButton = document.getElementById('boton-buscar');
   const cards = document.querySelectorAll('.card');
 
+  // Variable para rastrear el estado de la búsqueda
+  let isSearching = false;
+
   searchButton.addEventListener('click', function() {
-  const searchTerm = searchInput.value.toLowerCase();
-
-  cards.forEach(function(card) {
-    const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
-    if (cardTitle.includes(searchTerm)) {
-      card.style.display = 'block';
-      card.classList.add('search-result-card'); // Agregar clase para alinear
-    } else {
-      card.style.display = 'none';
-      card.classList.remove('search-result-card'); // Eliminar clase si no coincide
+    // Verifica si una búsqueda ya está en curso y evita hacer una nueva búsqueda.
+    if (isSearching) {
+      return;
     }
-  });
 
-  // Restaurar estilos al borrar la búsqueda
-  if (searchTerm === '') {
+    // Marca que la búsqueda está en curso.
+    isSearching = true;
+
+    const searchTerm = searchInput.value.toLowerCase();
+
     cards.forEach(function(card) {
-      card.style.display = 'block';
-      card.classList.remove('search-result-card');
+      const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+      if (cardTitle.includes(searchTerm)) {
+        card.style.display = 'block';
+        card.classList.add('search-result-card'); // Agregar clase para alinear
+      } else {
+        card.style.display = 'none';
+        card.classList.remove('search-result-card'); // Eliminar clase si no coincide
+      }
     });
-  }
+
+    // Restaurar estilos al borrar la búsqueda
+    if (searchTerm === '') {
+      cards.forEach(function(card) {
+        card.style.display = 'block';
+        card.classList.remove('search-result-card');
+      });
+    }
+
+    // Marca que la búsqueda ha terminado.
+    isSearching = false;
+  });
 });
 
-});
 
 
 
